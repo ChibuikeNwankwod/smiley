@@ -1,0 +1,131 @@
+style * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.image1,
+.image2 {
+    width: 50%;
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+.image2 {
+    bottom: -350px;
+    right: -2rem;
+}
+
+.image1 {
+    top: -350px;
+    left: -2rem;
+
+}
+
+.conte {
+    width: 30%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.info {
+    width: 800px;
+    height: 40%;
+    background-image: url(./image/bg-pattern-card.svg);
+
+
+}
+
+.ant {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.dan {
+    width: 90px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    background-image: url(./image/image-victor.jpg);
+    position: relative;
+    left: 17%;
+    top: -5%;
+    background-repeat: no-repeat;
+
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    right: 27%;
+    top: -7px;
+    font-weight: 800;
+
+}
+
+.state {
+    text-align: center;
+    text-decoration: none;
+    right: 27%;
+    top: -20px;
+    position: relative;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.like{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    place-items: center;
+    border-top: 1px solid;
+    position: relative;
+    top: -10rem;
+}.ist{
+    font-weight: 600;
+
+}.num2{
+    text-align: center;
+    font-size: 12px
+}
+/*  
+.first1 {
+    position: relative;
+    right: -5%;
+    bottom: -20px;
+    font-weight: 600;
+}
+
+.first {
+    position: relative;
+    right: -20%;
+    bottom: 50px;
+    font-weight: 600;
+}
+
+.first2 {
+    position: relative;
+    right: -35%;
+    bottom: 120px;
+    font-weight: 600;
+}
