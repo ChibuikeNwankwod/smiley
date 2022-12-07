@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    background-color: rgb(8, 105, 105);
+    overflow: hidden;
+    place-items: center;
+    display: grid;
+    position: relative;
+
+}
+
+.photo1,
+.photo2 {
+    position: absolute;
+    height: 75vh;
+}
+
+.photo1 {
+    left: -5rem;
+    top: -5rem;
+
+}
+
+.photo2 {
+    right: -5rem;
+    bottom: -5rem;
+}
+
+.content {
+    width: 27vw;
+    aspect-ratio: 1/1;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.sect1 {
+    height: 40%;
+    position: relative;
+    background-image: url(./image/bg-pattern-card.svg);
+    background-size: cover;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+
+.victor {
+    width: 30%;
+    border-radius: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -10rem;
+    position: absolute;
+}
+
+.prof {
+    text-align: center;
+    bottom: -5rem;
+    position: relative;
+    font-weight: bold;
+
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -4rem;
+    position: relative;
+    border-top: 0.1px solid;
+    padding-top: 2rem;
+    margin-top: 10%;
+}
+
+.container:hover{
+        transition: all;
+        transition-duration: 1.5s;
+        transition-property: all;
+        transform: translate(60%);
+        background:black;
+}  
+.content:hover{
+    transform: translate(20%);
+    background:#c4f31ac7;
+}

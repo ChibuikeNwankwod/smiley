@@ -50,7 +50,7 @@ body {
 }
 
 .info {
-    width: 800px;
+    /* width: 800px; */
     height: 40%;
     background-image: url(./image/bg-pattern-card.svg);
 
@@ -68,9 +68,8 @@ body {
     aspect-ratio: 1/1;
     border-radius: 100px;
     background-image: url(./image/image-victor.jpg);
-    position: relative;
-    left: 17%;
-    top: -5%;
+    position: absolute;
+   
     background-repeat: no-repeat;
 
 }
@@ -97,26 +96,31 @@ h3 {
 .like{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    place-items: center;
+    place-items:center;
     border-top: 1px solid;
-    position: relative;
-    top: -10rem;
+    position:absolute;
+    bottom:1rem;
+    gap: 2rem;
 }.ist{
     font-weight: 600;
+    position: relative;
 
-}.num2{
-    text-align: center;
-    font-size: 12px
 }
-/*  
-.first1 {
+
+.num2{
+    text-align: center;
+    font-size: 12px;
+    position:relative;
+    left: 10px;
+ } 
+/* .first1{ 
     position: relative;
     right: -5%;
     bottom: -20px;
     font-weight: 600;
 }
 
-.first {
+.first{
     position: relative;
     right: -20%;
     bottom: 50px;
