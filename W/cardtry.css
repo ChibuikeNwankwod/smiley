@@ -14,7 +14,7 @@ body {
 .container {
     width: 80%;
     height: 90%;
-    background-color: rgb(8, 105, 105);
+    background-image: linear-gradient(to top left, rgb(8, 105, 105), rgb(2, 31, 31)); 
     overflow: hidden;
     place-items: center;
     display: grid;
@@ -40,7 +40,7 @@ body {
 }
 
 .content {
-    width: 27vw;
+    width: 80%;
     aspect-ratio: 1/1;
     position: relative;
     background-color: white;
@@ -65,13 +65,13 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    bottom: -10rem;
+    bottom: -80%;
     position: absolute;
 }
 
 .prof {
     text-align: center;
-    bottom: -5rem;
+    bottom: -1rem;
     position: relative;
     font-weight: bold;
 
@@ -81,10 +81,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    bottom: -4rem;
+    bottom: -.2rem;
     position: relative;
     border-top: 0.1px solid;
-    padding-top: 2rem;
+    padding-top: .2rem;
     margin-top: 10%;
 }
 
@@ -92,10 +92,83 @@ body {
         transition: all;
         transition-duration: 1.5s;
         transition-property: all;
-        transform: translate(60%);
+        /* transform: translate(5%); */
         background:black;
 }  
 .content:hover{
     transform: translate(20%);
     background:#c4f31ac7;
+    
+}
+@media (min-width:360px) {
+        .prof{
+            bottom: -2.2rem;
+        }
+        .num{
+            bottom: -1.5rem;
+        }
+}
+@media (min-width:393px) {
+    .prof{
+        bottom: -2rem;
+    }
+    .num{
+        bottom: -2rem; }
+        
+}
+    @media (min-width:375px) {
+        .prof{
+            bottom: -2rem;
+        }
+        .num{
+            bottom: -2rem;
+        }
+}
+@media (min-width:540px) {
+        .prof{
+            bottom: -3rem;
+        }
+        .num{
+            bottom: -4rem;
+        }
+}
+@media (min-width:600px){
+    .content{
+        width: 40%;
+    }
+    .prof{
+        bottom: -5rem;
+    }
+    .num{
+        bottom: -4rem;
+        padding-top: 1rem;
+    }
+}
+ @media (min-width:768px) {
+        .prof{
+            bottom: -2rem;
+        }
+        .num{
+            bottom: -1.5rem;
+        }
+}
+@media (min-width:820px) {
+     .prof{
+         bottom: -3.5rem;
+     }
+     .num{
+         bottom:-2rem;
+     }
+}
+
+@media (min-width:1400px){
+    .content{
+        width: 27vw;
+    }
+    .prof{
+        bottom: -5rem;
+    }
+    .num{
+        bottom: -4rem;
+    }
 }
