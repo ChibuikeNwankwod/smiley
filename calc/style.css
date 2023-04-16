@@ -23,7 +23,7 @@
 .first{
     width: 350px;
     min-width: 200px;
-    height: 220px;
+    height: 400px;
     background: hsl(223, 31%, 20%);
     margin: auto;
     left: 0;
@@ -80,20 +80,32 @@
 
 input{
     width: 22%;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-shadow: 1px 1px;
+    /* gap: 10px; */
+    color:rgba(0, 0, 0, 0.486);
+    background-color:rgba(255, 255, 255, 0.87);
     font-weight: bolder;
-    height: 30px;
+    height: 65px;
     font-style: normal;
 
 }
 #RESET{
     width:165px;
     color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: hsl(224, 28%, 35%);
 }
 #equal{
     width: 160px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color:white;
     background-color: rgba(230, 50, 50, 0.973);
+}
+#Del{
+    color: white;
+    /* border-radius: 5px; */
+    background-color: hsl(224, 28%, 35%);
 }
